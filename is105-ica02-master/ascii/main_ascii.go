@@ -5,5 +5,7 @@ import (
 )
 
 func main() {
-	ascii.GetASCIIStringLitral()
+
+	stringliteral := ascii.GetASCIIStringLitral()
+	ascii.IterateOverASCIIStringLiteral(stringliteral)
 }
