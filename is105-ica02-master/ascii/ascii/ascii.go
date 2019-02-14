@@ -38,17 +38,18 @@ func IterateOverASCIIStringLiteral(stringLitteral string) {
 		fmt.Printf("%q  ", stringLitteral[i])
 		fmt.Printf("%b  \n", stringLitteral[i])
 	}
+}
 
-	// Unix-like operating systems are known to use it as erase control character, i.e. to delete the previous character in the line mode.
+// Unix-like operating systems are known to use it as erase control character, i.e. to delete the previous character in the line mode.
 
-	// Funksjonen skal generere en utskrift fra en sekvens av bytes,
-	// dvs. av typen []bytes (det betyr at du må finne den heksadesimale
-	// eller binære representasjonen av alle tegn i strengen,
-	// som skal skrives ut (inkludert anførselstegn eller
-	// “double quotes” på engelsk).
-	// Funksjonen GreetingASCII() returnerer en variabel av typen string,
-	// som inneholder kun ASCII tegn (ikke utvidet ASCII).
-	// Gjelder oppgave 1c
-	//func GreetingASCII() string {
-	//return ""
+// Funksjonen skal generere en utskrift fra en sekvens av bytes,
+// dvs. av typen []bytes (det betyr at du må finne den heksadesimale
+// eller binære representasjonen av alle tegn i strengen,
+// som skal skrives ut (inkludert anførselstegn eller
+// “double quotes” på engelsk).
+// Funksjonen GreetingASCII() returnerer en variabel av typen string,
+// som inneholder kun ASCII tegn (ikke utvidet ASCII).
+// Gjelder oppgave 1c
+func GreetingASCII() string {
+	return ""
 }
