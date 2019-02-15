@@ -1,5 +1,22 @@
-package ascii_test
+package ascii
 
 import "testing"
+import "fmt"
 
-var sum_tests_int8 = []struct {
+func TestGreetingsASCII(t *testing.T) {
+	ascii := GreetingASCII()
+	if !(isASCII(ascii)) {
+		t.Fail()
+	}
+}
+
+func isASCII(s string) bool {
+	for _, C := range s {
+		if C > 127 {
+			fmt.Println("Not only ascii! ")
+			return false
+		}
+	}
+	fmt.Println("only ascii! ")
+	return true
+}
