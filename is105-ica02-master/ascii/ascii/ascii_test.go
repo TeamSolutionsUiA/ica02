@@ -3,6 +3,7 @@ package ascii
 import "testing"
 import "fmt"
 
+// Koden er inspirert av gruppe 16 i is-105 vår 2019.
 func TestGreetingsASCII(t *testing.T) {
 	ascii := GreetingASCII()
 	if !(isASCII(ascii)) {
