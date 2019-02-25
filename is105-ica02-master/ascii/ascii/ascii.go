@@ -51,5 +51,5 @@ func IterateOverASCIIStringLiteral(stringLitteral string) {
 // som inneholder kun ASCII tegn (ikke utvidet ASCII).
 // Gjelder oppgave 1c
 func GreetingASCII() string {
-	return ""
+	return "hello :-)"
 }
