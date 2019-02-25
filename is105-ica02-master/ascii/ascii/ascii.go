@@ -34,7 +34,7 @@ func GetASCIIStringLitral() string {
 func IterateOverASCIIStringLiteral(stringLitteral string) {
 
 	for i := 0; i < len(stringLitteral); i++ {
-		fmt.Printf("%x  ", stringLitteral[i])
+		fmt.Printf("%X  ", stringLitteral[i])
 		fmt.Printf("%q  ", stringLitteral[i])
 		fmt.Printf("%b  \n", stringLitteral[i])
 	}
