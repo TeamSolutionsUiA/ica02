@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/TeamSolutions/ica02/is105-ica02-master/iso"
+	"github.com/TeamSulutionsUiA/ica02/is105-ica02-master/iso"
 )
 
 func main() {
