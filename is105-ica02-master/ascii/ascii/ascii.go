@@ -51,5 +51,11 @@ func IterateOverASCIIStringLiteral(stringLitteral string) {
 // som inneholder kun ASCII tegn (ikke utvidet ASCII).
 // Gjelder oppgave 1c
 func GreetingASCII() string {
-	return "hello :-)"
+	byteArray := []byte{'\x22', '\x68', '\x65', '\x6c', '\x6c', '\x6f', '\x20', '\x3a', '\x2d', '\x29', '\x22'}
+	greetingString := ""
+	for i := 0; i < len(byteArray); i++ {
+		greetingString += fmt.Sprintf("%c", byteArray[i])
+	}
+	fmt.Println(greetingString)
+	return greetingString
 }
