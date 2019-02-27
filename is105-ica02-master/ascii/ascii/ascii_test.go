@@ -1,23 +1,17 @@
+// Testpakke for pakken ascii
 package ascii
 
 import "testing"
 import "fmt"
 
-// Koden er inspirert av gruppe 16 i is-105 vår 2019.
+// Testfunksjon for funksjonen GreetingsASCII.
 func TestGreetingsASCII(t *testing.T) {
 	ascii := GreetingASCII()
-	if !(isASCII(ascii)) {
-		t.Fail()
-	}
-}
-
-func isASCII(s string) bool {
-	for _, C := range s {
+	for _, C := range ascii {
 		if C > 127 {
 			fmt.Println("Not only ascii! ")
-			return false
+			t.Fail()
 		}
+
 	}
-	fmt.Println("only ascii! ")
-	return true
 }
