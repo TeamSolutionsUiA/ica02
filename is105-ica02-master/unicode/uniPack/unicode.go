@@ -10,19 +10,23 @@ func Translate(expression string, language string) string {
 	transIs := "\x20\x1C\x6E\x6F\x72\xF0\x75\x72\x20\x6F\x67\x20\x73\x75\xF0\x75\x72\x20\x1D\x0A"
 
 	returnString := ""
+	testString :=""
 	if expression == "nord og sor" {
 
 		if language == "jp" {
-			returnString = fmt.Sprintf("%x", transJp)
+			returnString =transJp
 		} else if language == "is" {
-			returnString = fmt.Sprintf("%x", transIs)
+			returnString = transIs
 
+		}
+		for teller :=0;teller<len (returnString);teller++ {
+		testString += fmt.Sprintf("%c",returnString[teller])
 		}
 
 	} else {
-		returnString = "invalid expression! "
+		testString = "invalid expression! "
 	}
-	return returnString
+	return testString
 }
 
 // Kode for Oppgave 4b
