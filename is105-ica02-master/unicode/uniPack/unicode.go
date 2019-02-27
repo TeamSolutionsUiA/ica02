@@ -6,21 +6,21 @@ import (
 
 // Kode for Oppgave 4a
 func Translate(expression string, language string) string {
-	transJp := "\x20\x1C\x53\x17\x30\x68\x53\x57\x20\x1D\x0A"
+	transJp := "\xe2\x80\x9c\xe5\x8c\x97\xe3\x81\xa8\xe5\x8d\x97\xe2\x80\x9d"
 	transIs := "\x20\x1C\x6E\x6F\x72\xF0\x75\x72\x20\x6F\x67\x20\x73\x75\xF0\x75\x72\x20\x1D\x0A"
 
 	returnString := ""
-	testString :=""
+	testString := ""
 	if expression == "nord og sor" {
 
 		if language == "jp" {
-			returnString =transJp
+			returnString = transJp
 		} else if language == "is" {
 			returnString = transIs
 
 		}
-		for teller :=0;teller<len (returnString);teller++ {
-		testString += fmt.Sprintf("%c",returnString[teller])
+		for teller := 0; teller < len(returnString); teller++ {
+			testString += fmt.Sprintf("%c", returnString[teller])
 		}
 
 	} else {
