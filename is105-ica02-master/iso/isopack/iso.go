@@ -39,7 +39,7 @@ func IterateOverExtendedASCIIStringLiteral(extAscii string) {
 func GreetingExtendedASCII() string {
 	byteArray := []byte{'\x22', '\x53', '\x61', '\x6C', '\x75', '\x74', '\x2C', '\x20', '\xE7', '\x61', '\x20', '\x76',
 		'\x61', '\x20', '\xB0', '\x2D', '\x29', '\x20', '\xC7', '\x61', '\x20', '\x63', '\x6F', '\x75', '\x74', '\x65',
-		'\x20', '\x80', '\x35', '\x30', '\x22'}
+		'\x20', '\x80', '\x35', '\x30', '\x22', '\x0A'}
 	greetingString := ""
 	for i := 0; i < len(byteArray); i++ {
 		greetingString += fmt.Sprintf("%c", byteArray[i])
