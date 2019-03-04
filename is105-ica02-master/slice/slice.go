@@ -7,7 +7,9 @@ package slice
 // Returnerer en slice av type []byte
 // 
 func AllocateVar(b int) []byte {
-	// Kode for Oppgave 5a
+	var newSlice []byte
+	newSlice = make([]byte, b, b)
+	return newSlice
 }
 
 // AllocateMake tar lengde og kapasitet som b og lager en ny slice
