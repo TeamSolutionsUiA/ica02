@@ -1,8 +1,11 @@
 package main
 
-import ("github.com/TeamSolutionsUiA/ica02/is105-ica02-master/slice/slicepack"
- "fmt"
+import (
+	"fmt"
+
+	slice "github.com/TeamSolutionsUiA/ica02/is105-ica02-master/slice/slicepack"
 )
+
 func main() {
 	byteslice1 := make([]byte, 51, 100)
 
@@ -13,6 +16,9 @@ func main() {
 	fmt.Println(&aslice[0])
 	fmt.Println("&byteslice1[50]")
 	fmt.Println(&byteslice1[50])
-	
+
+	fmt.Println("test av copyslice: ")
+	copySlice := slice.CopySlice(byteslice1)
+	fmt.Println(&copySlice[50])
 
 }
