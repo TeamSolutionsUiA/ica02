@@ -27,8 +27,10 @@ func Reslice(slc []byte, lidx int, uidx int) []byte {
 }
 
 // CopySlice ???
-func CopySlice (copy []byte) []byte {
-copy =make([]byte,10,20)
+func CopySlice (copy1 []byte) []byte {
+copyarr :=make([]byte, 5,5)
+copy1 =make([]byte,20,20)	
+copy(copy1, copyarr)
 
-return copy
+return copyarr
 }
