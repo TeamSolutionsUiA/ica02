@@ -4,7 +4,7 @@ import ("github.com/TeamSolutionsUiA/ica02/is105-ica02-master/slice/slicepack"
  "fmt"
 )
 func main() {
-	byteslice1 := make([]byte, 50, 100)
+	byteslice1 := make([]byte, 60, 100)
 
 	fmt.Println("&byteslice1[0]")
 	fmt.Println(&byteslice1[0])
