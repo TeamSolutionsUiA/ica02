@@ -22,9 +22,10 @@ func AllocateMake(b int) []byte {
 // Reslice tar en slice og "slicer" den opp på nytt.
 // Skal bruke en av "allocate metodene" for å allokere plass i minnet.
 func Reslice(slc []byte, lidx int, uidx int) []byte {
-	slc = AllocateMake(60)
+	slc1 := AllocateMake(120)
+	slc1 = slc[lidx:uidx]
+	return slc1
 
-	return slc
 }
 
 // Oppg. 5.b
