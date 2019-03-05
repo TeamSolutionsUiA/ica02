@@ -1,3 +1,6 @@
+// mainpakke for å teste pakken "slice".
+// Oppgave 5 i ica02.
+
 package main
 
 import (
@@ -17,6 +20,7 @@ func main() {
 	fmt.Println("&byteslice1[50]")
 	fmt.Println(&byteslice1[50])
 
+	// For å teste copyslice funksjonen.
 	fmt.Println("test av copyslice: ")
 	copySlice := slice.CopySlice(byteslice1)
 	fmt.Println(&copySlice[50])
