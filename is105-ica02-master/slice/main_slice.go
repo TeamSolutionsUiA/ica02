@@ -6,7 +6,7 @@ package main
 import (
 	"fmt"
 
-	slice "github.com/TeamSolutionsUiA/ica02/is105-ica02-master/slice/slicepack"
+	slice "github.com/TeamSolutionsUiA/ica02/is105-ica02-master/slice/Slicepack"
 )
 
 func main() {
